@@ -14,16 +14,16 @@ let length = 0;
 let longestWord;
 let temp = array[0]
 
-function findLongestWord(word){
-  if (word.length == 0) {
+function findLongestWord(wordArray){
+  if (wordArray.length == 0) {
     return null;
   }
-  else if (word.length == 1){
-     return word[0];
-  }
+  
+  let longestWord = anArray[0];
+  
   array.forEach((oneSingleWord) =>{
-    if(oneSingleWord.length > temp.length){
-      temp.length = oneSingleWord
+    if(oneSingleWord.length > longestWord.length){
+      longestWord = oneSingleWord
     }
     
   });
